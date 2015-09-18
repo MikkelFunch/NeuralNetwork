@@ -71,8 +71,14 @@ public class Evolver {
 		System.out.println("2 in old: " + sortedNetworks.get(1).getFitness());
 		System.out.println("3 in old: " + sortedNetworks.get(2).getFitness());
 		System.out.println("4 in old: " + sortedNetworks.get(3).getFitness());
+		//Print average
+		double fitness = 0;
+		for (NeuralNetwork n : sortedNetworks) {
+			fitness += n.getFitness();
+		}
+		System.out.println("Average fitness: " + fitness/sortedNetworks.size());
 		
-		if(sortedNetworks.get(0).getFitness() > 9000){
+		if(sortedNetworks.get(0).getFitness() > 13000){
 			sortedNetworks.get(0).getGenome().setNumber(saveNumber);
 			IoHandler.saveGenome(sortedNetworks.get(0).getGenome());
 			saveNumber++;

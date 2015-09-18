@@ -3,19 +3,14 @@ package gamecontrollers;
 import java.util.ArrayList;
 import java.util.List;
 
-import control.NeuralNetworkController;
 import network.NeuralNetwork;
-import pacman.game.Game;
 import pacman.game.Constants.DM;
 import pacman.game.Constants.GHOST;
 import pacman.game.Constants.MOVE;
+import pacman.game.Game;
+import control.NeuralNetworkController;
 
-
-public class startPacmanController extends NeuralNetworkController {
-	
-	public startPacmanController(){
-		
-	}
+public class AdvancedPacmanController extends NeuralNetworkController {
 
 	@Override
 	public MOVE getMove(Game game, long timeDue) {

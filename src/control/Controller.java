@@ -14,7 +14,7 @@ import network.Genome;
 import network.NeuralNetwork;
 
 public class Controller {
-	private static final int TRIES_PR_NETWORK = 50;
+	private static final int TRIES_PR_NETWORK = 20;
 
 	public static void main(String [] args){
 		System.out.println("Setting evolver settings");
